@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_app/presentation/widget/custom_appBar.dart';
 import 'package:hive_app/presentation/widget/notes_list_view.dart';
 
@@ -13,7 +12,7 @@ class NotesViewBody extends StatelessWidget {
       child: Column(
         children: [
           const CustomAppBar(),
-          SizedBox(height: 30.h),
+         // SizedBox(height: 30.h),
           Flexible(child: const NotesListView()),
         ],
       ),
