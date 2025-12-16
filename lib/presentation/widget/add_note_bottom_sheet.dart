@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_app/presentation/widget/custom_text_field.dart';
 
 class AddNoteBottomSheet extends StatelessWidget {
@@ -10,7 +11,14 @@ class AddNoteBottomSheet extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 32.0),
       child: Column(
         children: [
-          CustomTextField(),
+          CustomTextField(
+            hintText: 'Title',
+          ),
+          SizedBox(height: 16.h,),
+          CustomTextField(
+            hintText: 'Description',
+            maxLines: 5,
+          ),
         ],
       ),
     );
