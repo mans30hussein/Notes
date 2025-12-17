@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
- import 'package:hive_app/feature/presentation/widget/add_note_bottom_sheet.dart';
- import 'package:hive_app/feature/presentation/widget/notes_view_body.dart';
+import 'package:hive_app/feature/presentation/widget/add_note_bottom_sheet.dart';
+import 'package:hive_app/feature/presentation/widget/notes_view_body.dart';
 
 class NotesView extends StatelessWidget {
   const NotesView({super.key});
