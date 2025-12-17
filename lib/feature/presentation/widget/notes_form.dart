@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hive_app/feature/data/maneger/add_note_cubit.dart';
+import 'package:hive_app/feature/data/maneger/add_note/add_note_cubit.dart';
 import 'package:hive_app/feature/data/model/note_model.dart';
 import 'package:hive_app/feature/presentation/widget/custom_button.dart';
 import 'package:hive_app/feature/presentation/widget/custom_text_field.dart';
@@ -27,7 +27,7 @@ class _NotesFormState extends State<NotesForm> {
       key: formKey,
       child: Padding(
         padding:
-            const EdgeInsets.only(right: 16, left: 16, top: 32.0, bottom: 32.0),
+                   EdgeInsets.only(right: 16, left: 16, top: 32.0, bottom:MediaQuery.of(context).viewInsets.bottom),
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -78,9 +78,9 @@ class _NotesFormState extends State<NotesForm> {
                   );
                 },
               ),
-              // SizedBox(
-              //   height: 16.h,
-              // ),
+              SizedBox(
+                height: 16.h,
+              ),
             ],
           ),
         ),
