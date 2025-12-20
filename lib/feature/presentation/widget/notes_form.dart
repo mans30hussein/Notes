@@ -3,6 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_app/feature/data/maneger/add_note/add_note_cubit.dart';
 import 'package:hive_app/feature/data/model/note_model.dart';
+import 'package:hive_app/feature/presentation/widget/color_picker.dart';
+import 'package:hive_app/feature/presentation/widget/color_picker_list_view.dart';
 import 'package:hive_app/feature/presentation/widget/custom_button.dart';
 import 'package:hive_app/feature/presentation/widget/custom_text_field.dart';
 import 'package:intl/intl.dart';
@@ -53,7 +55,12 @@ class _NotesFormState extends State<NotesForm> {
                 },
               ),
               SizedBox(
-                height: 32.h,
+                height: 22.h,
+              ),
+              ColorPickerListView(),
+
+              SizedBox(
+                height: 24.h,
               ),
               BlocBuilder<AddNoteCubit, AddNoteState>(
                 builder: (context, state) {
