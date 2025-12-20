@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:hive_app/core/constant.dart';
 
 class CustomTextField extends StatelessWidget {
-  const CustomTextField({super.key, required this.hintText, this.maxLines , this.onSaved});
+  const CustomTextField({super.key, required this.hintText, this.maxLines , this.onSaved ,  this.onchanged});
 
   final String hintText;
   final int? maxLines;
   final void Function(String?)? onSaved;
+  final void Function(String)? onchanged;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      onChanged: onchanged,
       onSaved: onSaved,
       validator: (value){
         if(value?.isEmpty ?? true){
