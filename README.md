@@ -34,7 +34,6 @@ lib/
 ├── features/
 │   └── notes/
 │       ├── data/
-│       ├── domain/
 │       └── presentation/
 └── main.dart
 
