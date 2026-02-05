@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hive_app/core/constant.dart';
 import 'package:hive_app/core/helper/notes_search_delegate.dart';
 import 'package:hive_app/feature/presentation/widget/custom_appBar.dart';
-import 'package:hive_app/feature/presentation/widget/note_item.dart';
 import 'package:hive_app/feature/presentation/widget/notes_list_view.dart';
-import 'package:hive/hive.dart';
-import 'package:hive_app/feature/data/model/note_model.dart';
 class NotesViewBody extends StatelessWidget {
   const NotesViewBody({super.key});
 
