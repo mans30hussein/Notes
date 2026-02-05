@@ -24,7 +24,9 @@ Flutter & Dart
 Hive / Local Storage 
 
 Cubit / Bloc 
-# 📂 Project Structure
+## 📂 Project Structure
+
+```text
 lib/
 ├── core/
 │   ├── utils/
@@ -32,5 +34,7 @@ lib/
 ├── features/
 │   └── notes/
 │       ├── data/
+│       ├── domain/
 │       └── presentation/
 └── main.dart
+
