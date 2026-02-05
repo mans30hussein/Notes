@@ -2,4 +2,35 @@
 
  Simple and efficient note-taking app with full CRUD functionality (Create, Read, Update, Delete)
  Offline-first local storage using Hive for fast and reliable data access
-# Technologies: Flutter, Dart, Hive, Cubit/Bloc
+ 
+ # 🚀 Features
+
+✍️ Create new notes
+
+📝 Edit existing notes
+
+🗑️ Delete notes
+
+💾 Local data persistence
+
+⚡ Fast and lightweight
+
+🎨 Simple & clean UI
+
+# 🛠️ Tech Stack
+
+Flutter & Dart
+
+Hive / Local Storage 
+
+Cubit / Bloc 
+# 📂 Project Structure
+lib/
+├── core/
+│   ├── utils/
+│   └── constants/
+├── features/
+│   └── notes/
+│       ├── data/
+│       └── presentation/
+└── main.dart
